@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Academy - Form" max_length="40" name="x_58872_needit_academy_form" type="collection">
+        <element default="0" label="Age" max_length="40" name="u_age" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Birthday" mandatory="true" max_length="40" name="u_bday" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" dependent="u_state" dependent_on_field="u_state" label="City" mandatory="true" max_length="40" name="u_city" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" mandatory="true" max_length="40" name="u_gender" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Female" sequence="0" value="female"/>
+                <element inactive_on_update="false" label="Male" sequence="1" value="male"/>
+                <element inactive_on_update="false" label="Non Binary" sequence="2" value="non binary"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="State" mandatory="true" max_length="40" name="u_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Surname" mandatory="true" max_length="40" name="u_surname" type="string"/>
+    </element>
+</database>
